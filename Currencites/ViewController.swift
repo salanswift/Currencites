@@ -13,8 +13,18 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
+		downloadAndUpdate(base: "USD")
 	}
 
+	func downloadAndUpdate(base: String)
+    {
+		ExchangeRateApi.sharedInstance().getBaseConversions(base: base) {status,data,error in
+			
+			print(status)
+			print(data ?? "")
+			print(error ?? "")
+		}
+	}
 
 }
 
