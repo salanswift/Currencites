@@ -16,6 +16,13 @@
 		2EDB39B923A0A99800FC9C34 /* ExchangeRateApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB39B823A0A99800FC9C34 /* ExchangeRateApi.swift */; };
 		2EDB39BB23A0A9BC00FC9C34 /* ExchangeRateApi-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB39BA23A0A9BC00FC9C34 /* ExchangeRateApi-Constants.swift */; };
 		2EDB39BD23A0A9DE00FC9C34 /* ExchangeRateApi-Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB39BC23A0A9DE00FC9C34 /* ExchangeRateApi-Convinience.swift */; };
+		2EE4ACCE23A0D35C009D2DBB /* CurrencySelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ACCD23A0D35C009D2DBB /* CurrencySelectionCell.swift */; };
+		2EE4ACD023A0D537009D2DBB /* CurrencyConvertedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ACCF23A0D537009D2DBB /* CurrencyConvertedCell.swift */; };
+		2EE4ACD223A0E459009D2DBB /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ACD123A0E459009D2DBB /* Currencies.swift */; };
+		2EE4ACD423A0E864009D2DBB /* CurrencyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ACD323A0E864009D2DBB /* CurrencyPickerViewController.swift */; };
+		2EE4ACD723A10E50009D2DBB /* ExchangeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ACD523A10E50009D2DBB /* ExchangeModel.xcdatamodeld */; };
+		2EE4ACD923A11011009D2DBB /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ACD823A11011009D2DBB /* ExchangeRate.swift */; };
+		2EE4ACDD23A13E0F009D2DBB /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ACDC23A13E0F009D2DBB /* CoreDataStackManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		2EDB39B823A0A99800FC9C34 /* ExchangeRateApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateApi.swift; sourceTree = "<group>"; };
 		2EDB39BA23A0A9BC00FC9C34 /* ExchangeRateApi-Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExchangeRateApi-Constants.swift"; sourceTree = "<group>"; };
 		2EDB39BC23A0A9DE00FC9C34 /* ExchangeRateApi-Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExchangeRateApi-Convinience.swift"; sourceTree = "<group>"; };
+		2EE4ACCD23A0D35C009D2DBB /* CurrencySelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionCell.swift; sourceTree = "<group>"; };
+		2EE4ACCF23A0D537009D2DBB /* CurrencyConvertedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConvertedCell.swift; sourceTree = "<group>"; };
+		2EE4ACD123A0E459009D2DBB /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
+		2EE4ACD323A0E864009D2DBB /* CurrencyPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerViewController.swift; sourceTree = "<group>"; };
+		2EE4ACD623A10E50009D2DBB /* ExchangeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeModel.xcdatamodel; sourceTree = "<group>"; };
+		2EE4ACD823A11011009D2DBB /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		2EE4ACDC23A13E0F009D2DBB /* CoreDataStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +76,18 @@
 		2EDB39A223A0A24A00FC9C34 /* Currencites */ = {
 			isa = PBXGroup;
 			children = (
+				2EE4ACCB23A0D303009D2DBB /* Controllers */,
+				2EE4ACCA23A0D303009D2DBB /* Model */,
+				2EE4ACCC23A0D303009D2DBB /* View */,
 				2EDB39B723A0A90C00FC9C34 /* ExchangeRateDB */,
 				2EDB39A323A0A24A00FC9C34 /* AppDelegate.swift */,
 				2EDB39A523A0A24A00FC9C34 /* SceneDelegate.swift */,
-				2EDB39A723A0A24A00FC9C34 /* ViewController.swift */,
 				2EDB39A923A0A24A00FC9C34 /* Main.storyboard */,
+				2EE4ACD523A10E50009D2DBB /* ExchangeModel.xcdatamodeld */,
 				2EDB39AC23A0A24D00FC9C34 /* Assets.xcassets */,
 				2EDB39AE23A0A24D00FC9C34 /* LaunchScreen.storyboard */,
 				2EDB39B123A0A24D00FC9C34 /* Info.plist */,
+				2EE4ACDC23A13E0F009D2DBB /* CoreDataStackManager.swift */,
 			);
 			path = Currencites;
 			sourceTree = "<group>";
@@ -82,6 +100,33 @@
 				2EDB39BC23A0A9DE00FC9C34 /* ExchangeRateApi-Convinience.swift */,
 			);
 			path = ExchangeRateDB;
+			sourceTree = "<group>";
+		};
+		2EE4ACCA23A0D303009D2DBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4ACD123A0E459009D2DBB /* Currencies.swift */,
+				2EE4ACD823A11011009D2DBB /* ExchangeRate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EE4ACCB23A0D303009D2DBB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EDB39A723A0A24A00FC9C34 /* ViewController.swift */,
+				2EE4ACD323A0E864009D2DBB /* CurrencyPickerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EE4ACCC23A0D303009D2DBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4ACCD23A0D35C009D2DBB /* CurrencySelectionCell.swift */,
+				2EE4ACCF23A0D537009D2DBB /* CurrencyConvertedCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +200,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE4ACD223A0E459009D2DBB /* Currencies.swift in Sources */,
 				2EDB39A823A0A24A00FC9C34 /* ViewController.swift in Sources */,
 				2EDB39BD23A0A9DE00FC9C34 /* ExchangeRateApi-Convinience.swift in Sources */,
+				2EE4ACD423A0E864009D2DBB /* CurrencyPickerViewController.swift in Sources */,
+				2EE4ACD723A10E50009D2DBB /* ExchangeModel.xcdatamodeld in Sources */,
 				2EDB39B923A0A99800FC9C34 /* ExchangeRateApi.swift in Sources */,
+				2EE4ACD023A0D537009D2DBB /* CurrencyConvertedCell.swift in Sources */,
+				2EE4ACCE23A0D35C009D2DBB /* CurrencySelectionCell.swift in Sources */,
+				2EE4ACD923A11011009D2DBB /* ExchangeRate.swift in Sources */,
+				2EE4ACDD23A13E0F009D2DBB /* CoreDataStackManager.swift in Sources */,
 				2EDB39A423A0A24A00FC9C34 /* AppDelegate.swift in Sources */,
 				2EDB39BB23A0A9BC00FC9C34 /* ExchangeRateApi-Constants.swift in Sources */,
 				2EDB39A623A0A24A00FC9C34 /* SceneDelegate.swift in Sources */,
@@ -305,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCXSLH7C2U;
 				INFOPLIST_FILE = Currencites/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -322,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCXSLH7C2U;
 				INFOPLIST_FILE = Currencites/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,6 +410,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2EE4ACD523A10E50009D2DBB /* ExchangeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2EE4ACD623A10E50009D2DBB /* ExchangeModel.xcdatamodel */,
+			);
+			currentVersion = 2EE4ACD623A10E50009D2DBB /* ExchangeModel.xcdatamodel */;
+			path = ExchangeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2EDB399823A0A24A00FC9C34 /* Project object */;
 }
